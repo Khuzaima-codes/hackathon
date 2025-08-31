@@ -1,0 +1,182 @@
+.active {
+    color: white !important;
+}
+
+.navbar {
+    height: 85px;
+}
+
+.nav-pd {
+    height: 100%;
+}
+
+.navbar-nav * {
+    font-size: 12px;
+}
+
+.ticket-btn {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    width: fit-content;
+}
+
+.ticket-btn:hover {
+    background-color: black !important;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.active:hover {
+    color: black !important;
+    transition: 0.3s;
+}
+
+.navbar-brand {
+    background-color: #333;
+}
+
+.hero-sec {
+    height: 100vh;
+}
+.hero-sec .card-img-overlay {
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.hero-sec .card-title {
+    font-size: 54px;
+}
+
+.hero-sec .card-text {
+    font-size: 1.2rem;
+}
+
+.lb-color {
+    color: #999;
+}
+
+.fa-play {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.cb-sec1 img {
+    width: 60px;
+    z-index: 1;
+}
+
+.cb-sec1 .img2 {
+    left: 40px;
+    top: 0;
+    z-index: 0;
+}
+
+.card-bottom {
+    width: fit-content;
+    bottom: 60px;
+    margin: auto;
+    background-color: #232931;
+}
+
+.card-sec1 .c2 {
+    background-image: url(assets/images/victory.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.c2 i {
+    background-color: white !important;
+}
+
+.img-c {
+    width: 100px;
+}
+
+.border-bottom.py-1 {
+    border-width: 5px !important;
+}
+
+.t-text {
+    font-size: 44px;
+}
+
+.details-btn {
+    width: fit-content;
+    margin: auto;
+}
+
+.det-btn {
+    width: fit-content;
+    margin: auto;
+}
+
+.places-sec {
+    background-color: #f5f5f5;
+}
+
+.places-sec .card-body i {
+    font-size: 50px;
+}
+
+.places-sec .card-body .card-title {
+    font-size: 18px !important;
+}
+
+.bg-img-sec {
+    height: 670px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(assets/images/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.lgray {
+    color: gainsboro !important;
+}
+
+.libg {
+    background-color: #f5f5f5 !important;
+}
+
+.bg-img-sec2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(assets/images/bg_2.jpg);
+    background-attachment: fixed;
+}
+.bg-img-sec2 .card-top{
+    width: 120px;
+    height: 120px;
+    background-image: url(assets/images/person_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+}
+.blog-sec .card .card-img-top{
+    height: 280px;
+}
+.subscribe-sec{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(assets/images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    background-color: #111;
+}
+@media only screen and (max-width: 576px) {
+    .navbar{
+        height: 70px;
+    }
+}
