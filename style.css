@@ -5,7 +5,6 @@
 .navbar {
     height: 85px;
 }
-
 .nav-pd {
     height: 100%;
 }
@@ -43,6 +42,14 @@
 .hero-sec {
     height: 100vh;
 }
+.hero-sec .card{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(assets/images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .hero-sec .card-img-overlay {
     margin-left: auto;
     margin-right: 10%;
@@ -66,7 +73,9 @@
     font-size: 14px;
     background-color: rgba(255, 255, 255, 0.7) !important;
 }
-
+.game-schedule .card{
+    box-shadow: 0px 10px 8px 0px rgb(238, 238, 238);
+}
 .cb-sec1 img {
     width: 60px;
     z-index: 1;
