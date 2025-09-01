@@ -5,6 +5,7 @@
 .navbar {
     height: 85px;
 }
+
 .nav-pd {
     height: 100%;
 }
@@ -42,7 +43,8 @@
 .hero-sec {
     height: 100vh;
 }
-.hero-sec .card{
+
+.hero-sec .card {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(assets/images/bg_1.jpg);
     background-repeat: no-repeat;
@@ -50,9 +52,13 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
 .hero-sec .card-img-overlay {
     margin-left: auto;
     margin-right: 10%;
+    opacity: 0;
+    transform: translateY(20%);
+    animation: start 1s ease 0.1s 1 forwards;
 }
 
 .hero-sec .card-title {
@@ -73,9 +79,21 @@
     font-size: 14px;
     background-color: rgba(255, 255, 255, 0.7) !important;
 }
-.game-schedule .card{
+
+.game-schedule .card {
     box-shadow: 0px 10px 8px 0px rgb(238, 238, 238);
 }
+
+.card-bottom {
+    width: fit-content;
+    bottom: 60px;
+    margin: auto;
+    background-color: #232931;
+    opacity: 0;
+    transform: translateY(20%);
+    animation: start 1s ease 0.1s 1 forwards;
+}
+
 .cb-sec1 img {
     width: 60px;
     z-index: 1;
@@ -87,12 +105,6 @@
     z-index: 0;
 }
 
-.card-bottom {
-    width: fit-content;
-    bottom: 60px;
-    margin: auto;
-    background-color: #232931;
-}
 
 .card-sec1 .c2 {
     background-image: url(assets/images/victory.jpg);
@@ -140,7 +152,7 @@
 }
 
 .bg-img-sec {
-    height: 670px;
+    height: fit-content;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(assets/images/bg_3.jpg);
     background-repeat: no-repeat;
@@ -162,7 +174,7 @@
         url(assets/images/bg_2.jpg);
     background-attachment: fixed;
 }
-.bg-img-sec2 .card-top{
+.bg-img-sec2 .card-top {
     width: 120px;
     height: 120px;
     background-image: url(assets/images/person_1.jpg);
@@ -171,21 +183,51 @@
     background-position: center;
     text-align: end;
 }
-.blog-sec .card .card-img-top{
+
+.blog-sec .card .card-img-top {
     height: 280px;
 }
-.subscribe-sec{
+
+.subscribe-sec {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url(assets/images/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-footer{
+
+footer {
     background-color: #111;
 }
+
+.anim {
+    opacity: 0;
+    transform: translateY(20%);
+    animation: start 1s ease 0.1s 1 forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.row{
+    opacity: 0;
+    transform: translateY(20%);
+    animation: start 1s ease 0.1s 1 forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+@keyframes start {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 576px) {
-    .navbar{
+    .navbar {
         height: 70px;
     }
 }
