@@ -59,6 +59,7 @@
     opacity: 0;
     transform: translateY(20%);
     animation: start 1s ease 0.1s 1 forwards;
+    width: 50%;
 }
 
 .hero-sec .card-title {
@@ -174,6 +175,7 @@
         url(assets/images/bg_2.jpg);
     background-attachment: fixed;
 }
+
 .bg-img-sec2 .card-top {
     width: 120px;
     height: 120px;
@@ -207,13 +209,23 @@ footer {
     animation-timeline: view();
     animation-range: entry 0;
 }
-.row{
+
+.row {
     opacity: 0;
     transform: translateY(20%);
     animation: start 1s ease 0.1s 1 forwards;
     animation-timeline: view();
     animation-range: entry 0;
 }
+
+.slide-col1 {
+    animation: left 15s ease 5s infinite forwards;
+}
+
+.slide-col2 {
+    animation: right 15s ease 5s infinite forwards;
+}
+
 @keyframes start {
     from {
         transform: translateY(20%);
@@ -225,9 +237,88 @@ footer {
         opacity: 1;
     }
 }
+@keyframes left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    80% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(100%);
+    }
+
+    10% {
+        transform: translateX(0%);
+    }
+
+    45% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    80% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes color {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 @media only screen and (max-width: 576px) {
     .navbar {
         height: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-img-overlay {
+        width: fit-content !important;
+    }
+
+    .hero-sec .card-title {
+        font-size: 32px;
+    }
+
+    .hero-sec .card-text {
+        font-size: 1rem;
     }
 }
