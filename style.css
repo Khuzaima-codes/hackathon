@@ -219,11 +219,13 @@ footer {
 }
 
 .slide-col1 {
-    animation: left 15s ease 5s infinite forwards;
+    animation: left 15s ease 5s infinite;
+    animation-fill-mode: forwards;
 }
 
 .slide-col2 {
-    animation: right 15s ease 5s infinite forwards;
+    animation: right 15s ease 5s infinite;
+    animation-fill-mode: forwards;
 }
 
 @keyframes start {
